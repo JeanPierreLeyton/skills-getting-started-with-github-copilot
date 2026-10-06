@@ -74,6 +74,76 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e1e5ec;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-list {
+  padding: 0;
+  list-style: none;
+  color: #4b5563;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  overflow-wrap: anywhere;
+}
+
+.participants-list li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: grid;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #e2caca;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #a43b3b;
+}
+
+.remove-participant:hover:not(:disabled) {
+  border-color: #a43b3b;
+  background-color: #fff3f2;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.participants-list .empty-participants {
+  color: #7b8492;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
